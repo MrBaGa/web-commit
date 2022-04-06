@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>工厂模式 | Christine</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" herf="logo.png">
+    <meta name="description" content="一名专注前端开发的程序媛 👧🏻">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.9125a547.css" as="style"><link rel="preload" href="/blog/assets/js/app.b0872638.js" as="script"><link rel="preload" href="/blog/assets/js/2.765c97b4.js" as="script"><link rel="preload" href="/blog/assets/js/17.1f371c9e.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.2b7f9223.js"><link rel="prefetch" href="/blog/assets/js/11.75c62e44.js"><link rel="prefetch" href="/blog/assets/js/12.342c83b0.js"><link rel="prefetch" href="/blog/assets/js/13.36136e00.js"><link rel="prefetch" href="/blog/assets/js/14.ebcf16c3.js"><link rel="prefetch" href="/blog/assets/js/15.4324320d.js"><link rel="prefetch" href="/blog/assets/js/16.d0f7e542.js"><link rel="prefetch" href="/blog/assets/js/18.22f0ee3e.js"><link rel="prefetch" href="/blog/assets/js/19.d53a53b3.js"><link rel="prefetch" href="/blog/assets/js/20.f2926ac2.js"><link rel="prefetch" href="/blog/assets/js/21.086faee6.js"><link rel="prefetch" href="/blog/assets/js/22.ba95ea56.js"><link rel="prefetch" href="/blog/assets/js/23.9cec4f23.js"><link rel="prefetch" href="/blog/assets/js/24.4b4dafe9.js"><link rel="prefetch" href="/blog/assets/js/25.3ab1b5c8.js"><link rel="prefetch" href="/blog/assets/js/26.086d9ce4.js"><link rel="prefetch" href="/blog/assets/js/27.7d3bb54a.js"><link rel="prefetch" href="/blog/assets/js/28.439dca05.js"><link rel="prefetch" href="/blog/assets/js/29.7ecb82b3.js"><link rel="prefetch" href="/blog/assets/js/3.275c6e08.js"><link rel="prefetch" href="/blog/assets/js/30.4f4d8732.js"><link rel="prefetch" href="/blog/assets/js/31.d57dfb78.js"><link rel="prefetch" href="/blog/assets/js/32.8024799d.js"><link rel="prefetch" href="/blog/assets/js/33.0f47e14d.js"><link rel="prefetch" href="/blog/assets/js/34.4bb99a8c.js"><link rel="prefetch" href="/blog/assets/js/35.6aa7d475.js"><link rel="prefetch" href="/blog/assets/js/36.bad7051f.js"><link rel="prefetch" href="/blog/assets/js/37.367ef9ce.js"><link rel="prefetch" href="/blog/assets/js/38.48e6e97f.js"><link rel="prefetch" href="/blog/assets/js/39.358382f1.js"><link rel="prefetch" href="/blog/assets/js/4.f7478058.js"><link rel="prefetch" href="/blog/assets/js/40.b5fd9c0e.js"><link rel="prefetch" href="/blog/assets/js/5.771aaea5.js"><link rel="prefetch" href="/blog/assets/js/6.a5fb572d.js"><link rel="prefetch" href="/blog/assets/js/7.0f5a4226.js"><link rel="prefetch" href="/blog/assets/js/8.3552007e.js"><link rel="prefetch" href="/blog/assets/js/9.e8a8f62f.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.9125a547.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">Christine</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/interview/" class="nav-link">
+  前端面试之道
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端书籍" class="dropdown-title"><span class="title">前端书籍</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端书籍" class="mobile-dropdown-title"><span class="title">前端书籍</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/books/" class="nav-link router-link-active">
+  JavaScript设计模式
+</a></li></ul></div></div><div class="nav-item"><a href="/blog/git/" class="nav-link">
+  Git
+</a></div><div class="nav-item"><a href="/blog/typescript/" class="nav-link">
+  TypeScript
+</a></div><div class="nav-item"><a href="/blog/react/" class="nav-link">
+  React
+</a></div><div class="nav-item"><a href="/blog/advance/prettier.html" class="nav-link">
+  前端进阶
+</a></div><div class="nav-item"><a href="/blog/automate/" class="nav-link">
+  前端自动化部署
+</a></div><div class="nav-item"><a href="/blog/other/css.html" class="nav-link">
+  常见问题
+</a></div> <a href="https://github.com/Christine-Only/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/interview/" class="nav-link">
+  前端面试之道
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端书籍" class="dropdown-title"><span class="title">前端书籍</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端书籍" class="mobile-dropdown-title"><span class="title">前端书籍</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/books/" class="nav-link router-link-active">
+  JavaScript设计模式
+</a></li></ul></div></div><div class="nav-item"><a href="/blog/git/" class="nav-link">
+  Git
+</a></div><div class="nav-item"><a href="/blog/typescript/" class="nav-link">
+  TypeScript
+</a></div><div class="nav-item"><a href="/blog/react/" class="nav-link">
+  React
+</a></div><div class="nav-item"><a href="/blog/advance/prettier.html" class="nav-link">
+  前端进阶
+</a></div><div class="nav-item"><a href="/blog/automate/" class="nav-link">
+  前端自动化部署
+</a></div><div class="nav-item"><a href="/blog/other/css.html" class="nav-link">
+  常见问题
+</a></div> <a href="https://github.com/Christine-Only/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/blog/books/" aria-current="page" class="sidebar-link">JavaScript设计模式</a></li><li><a href="/blog/books/FactoryPattern.html" aria-current="page" class="active sidebar-link">工厂模式</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/books/FactoryPattern.html#工场模式介绍" class="sidebar-link">工场模式介绍</a></li><li class="sidebar-sub-header"><a href="/blog/books/FactoryPattern.html#简单工厂模式" class="sidebar-link">简单工厂模式</a></li><li class="sidebar-sub-header"><a href="/blog/books/FactoryPattern.html#工厂方法模式" class="sidebar-link">工厂方法模式</a></li><li class="sidebar-sub-header"><a href="/blog/books/FactoryPattern.html#抽象工厂模式" class="sidebar-link">抽象工厂模式</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="工厂模式"><a href="#工厂模式" class="header-anchor">#</a> 工厂模式</h1> <h2 id="工场模式介绍"><a href="#工场模式介绍" class="header-anchor">#</a> 工场模式介绍</h2> <blockquote><p>所谓工厂模式就是像工厂一样重复的产生类似的产品，工厂模式只需要我们传入正确的参数，就能生产类似的产品；
+工厂模式根据抽象程度依次分为简单工厂模式、工厂方法模式、抽象工厂模式。</p></blockquote> <h2 id="简单工厂模式"><a href="#简单工厂模式" class="header-anchor">#</a> 简单工厂模式</h2> <blockquote><p>又叫静态工厂方法，由一个工厂对象决定创建某一种产品对象类的实例。主要用来创建同一类对象。</p></blockquote> <h3 id="对不同的类实例化"><a href="#对不同的类实例化" class="header-anchor">#</a> 对不同的类实例化</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 篮球基类</span>
+<span class="token keyword">function</span> <span class="token function">Basketball</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>intro <span class="token operator">=</span> <span class="token string">'篮球流行于美国'</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token class-name">Basketball</span><span class="token punctuation">.</span>prototype <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token function-variable function">getBallsize</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'篮球很大'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 足球基类</span>
+<span class="token keyword">function</span> <span class="token function">Football</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>intro <span class="token operator">=</span> <span class="token string">'足球在世界范围内很流行'</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token class-name">Football</span><span class="token punctuation">.</span>prototype <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token function-variable function">getBallsize</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'足球很大'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 网球基类</span>
+<span class="token keyword">function</span> <span class="token function">Tennis</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>intro <span class="token operator">=</span> <span class="token string">'每年有很多网球系列赛'</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token class-name">Tennis</span><span class="token punctuation">.</span>prototype <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token function-variable function">getBallsize</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'网球很小'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 运动工厂</span>
+<span class="token keyword">function</span> <span class="token function">sportsFactory</span><span class="token punctuation">(</span><span class="token parameter">name</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">switch</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">case</span> <span class="token string">'NBA'</span><span class="token operator">:</span>
+      <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Basketball</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">case</span> <span class="token string">'wordcup'</span><span class="token operator">:</span>
+      <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Football</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">case</span> <span class="token string">'Frenchopen'</span><span class="token operator">:</span>
+      <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Tennis</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> basketball <span class="token operator">=</span> <span class="token function">sportsFactory</span><span class="token punctuation">(</span><span class="token string">'NBA'</span><span class="token punctuation">)</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>basketball<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// { intro: '篮球流行于美国' }</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>basketball<span class="token punctuation">.</span>intro<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 篮球流行于美国</span>
+basketball<span class="token punctuation">.</span><span class="token function">getBallsize</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 篮球很大</span>
+</code></pre></div><h3 id="创建相似对象-相似东西提取-不相似的针对性处理"><a href="#创建相似对象-相似东西提取-不相似的针对性处理" class="header-anchor">#</a> 创建相似对象 (相似东西提取，不相似的针对性处理)</h3> <blockquote><p>你只需简单创建一个对象即可，然后通过对这个对象大量拓展方法和属性，并在最终将对象返回出来。</p></blockquote> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 工厂模式</span>
+<span class="token keyword">function</span> <span class="token function">sportsFactory</span><span class="token punctuation">(</span><span class="token parameter">name<span class="token punctuation">,</span> intro<span class="token punctuation">,</span> detail</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> o <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Object</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 创建一个对象，并对对象拓展属性和方法</span>
+
+  o<span class="token punctuation">.</span>intro <span class="token operator">=</span> intro<span class="token punctuation">;</span>
+
+  o<span class="token punctuation">.</span><span class="token function-variable function">getBallsize</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>detail<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>name <span class="token operator">===</span> <span class="token string">'NBA'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    o<span class="token punctuation">.</span>nba <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>name <span class="token operator">===</span> <span class="token string">'wordcup'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    o<span class="token punctuation">.</span>wordcup <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>name <span class="token operator">===</span> <span class="token string">'Frenchopen'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    o<span class="token punctuation">.</span>frenchopen <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">return</span> o
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> arr <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span> name<span class="token operator">:</span> <span class="token string">'NBA'</span><span class="token punctuation">,</span> intro<span class="token operator">:</span> <span class="token string">'篮球流行于美国'</span><span class="token punctuation">,</span> detail<span class="token operator">:</span> <span class="token string">'篮球很大'</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span> name<span class="token operator">:</span> <span class="token string">'wordcup'</span><span class="token punctuation">,</span> intro<span class="token operator">:</span> <span class="token string">'足球在世界范围内很流行'</span><span class="token punctuation">,</span> detail<span class="token operator">:</span> <span class="token string">'足球很大'</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span> name<span class="token operator">:</span> <span class="token string">'Frenchopen'</span><span class="token punctuation">,</span> intro<span class="token operator">:</span> <span class="token string">'每年有很多网球系列赛'</span><span class="token punctuation">,</span> detail<span class="token operator">:</span> <span class="token string">'网球很小'</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span>
+arr<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token parameter">item</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> <span class="token punctuation">{</span> name<span class="token punctuation">,</span> intro<span class="token punctuation">,</span> detail <span class="token punctuation">}</span> <span class="token operator">=</span> item
+  <span class="token keyword">const</span> balls <span class="token operator">=</span> <span class="token function">sportsFactory</span><span class="token punctuation">(</span>name<span class="token punctuation">,</span> intro<span class="token punctuation">,</span> detail<span class="token punctuation">)</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>balls<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+执行结果如下：
+<span class="token punctuation">{</span> intro<span class="token operator">:</span> <span class="token string">'篮球流行于美国'</span><span class="token punctuation">,</span> getBallsize<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token function">Function</span> <span class="token punctuation">(</span>anonymous<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">,</span> nba<span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">{</span>
+  intro<span class="token operator">:</span> <span class="token string">'足球在世界范围内很流行'</span><span class="token punctuation">,</span>
+  getBallsize<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token function">Function</span> <span class="token punctuation">(</span>anonymous<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  wordcup<span class="token operator">:</span> <span class="token boolean">true</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">{</span>
+  intro<span class="token operator">:</span> <span class="token string">'每年有很多网球系列赛'</span><span class="token punctuation">,</span>
+  getBallsize<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token function">Function</span> <span class="token punctuation">(</span>anonymous<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  frenchopen<span class="token operator">:</span> <span class="token boolean">true</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>结论</strong>：
+第一种是通过类实例化对象创建的，第二种是通过创建一个新对象然后包装增强其属性和功能来实现的。他们之间的差异性也造成前面通过类创建的对象，如果这些类继承同一父类，那么他们的父类原型上的方法是可以共用的。而后面寄生方式创建的对象都是一个新的个体，所以他们的方法就不能共用了。</p> <h2 id="工厂方法模式"><a href="#工厂方法模式" class="header-anchor">#</a> 工厂方法模式</h2> <blockquote><p>本意是说将实际创建对象工作推迟到子类当中。</p></blockquote> <h3 id="安全模式类"><a href="#安全模式类" class="header-anchor">#</a> 安全模式类</h3> <blockquote><p>可以屏蔽对类的错误使用造成的错误。</p></blockquote> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">Demo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token class-name">Demo</span><span class="token punctuation">.</span>prototype <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token function-variable function">show</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'成功获取！'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> d <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Demo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+d<span class="token punctuation">.</span><span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 成功获取！</span>
+
+<span class="token keyword">const</span> d <span class="token operator">=</span> <span class="token function">Demo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+d<span class="token punctuation">.</span><span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// TypeError: Cannot read property 'show' of undefined</span>
+</code></pre></div><p>解决上面报错的方式很简单，就是在构造函数开始时先判断当前对象this指代是不是类（Demo），如果是则通过new关键字创建对象，如果不是说明类在全局作用域中执行（通常情况下），那么既然在全局作用域中执行当然this就会指向window了（通常情况下，如非浏览器环境可为其他全局对象），这样我们就要重新返回新创建的对象了。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">Demo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span><span class="token punctuation">(</span><span class="token keyword">this</span> <span class="token keyword">instanceof</span> <span class="token class-name">Demo</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Demo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token class-name">Demo</span><span class="token punctuation">.</span>prototype <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token function-variable function">show</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'成功获取！'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> d <span class="token operator">=</span> <span class="token function">Demo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+d<span class="token punctuation">.</span><span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 成功获取！</span>
+</code></pre></div><p>代码详解：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span> <span class="token keyword">instanceof</span> <span class="token class-name">Factory</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">this</span><span class="token punctuation">[</span>role<span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Factory</span><span class="token punctuation">(</span>role<span class="token punctuation">)</span><span class="token punctuation">;</span>
+当构造函数没有使用<span class="token keyword">new</span>关键字调用时不仅不能创建实例，还会声明全局变量
+</code></pre></div><h3 id="安全的工厂方法"><a href="#安全的工厂方法" class="header-anchor">#</a> 安全的工厂方法</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 安全模式创建的工厂类</span>
+<span class="token keyword">function</span> <span class="token function">SportsFactory</span><span class="token punctuation">(</span><span class="token parameter">type<span class="token punctuation">,</span> intro</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token keyword">this</span> <span class="token keyword">instanceof</span> <span class="token class-name">SportsFactory</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">this</span><span class="token punctuation">[</span>type<span class="token punctuation">]</span><span class="token punctuation">(</span>intro<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">SportsFactory</span><span class="token punctuation">(</span>type<span class="token punctuation">,</span> intro<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 工厂原型中设置创建所有类型数据对象的基类</span>
+<span class="token class-name">SportsFactory</span><span class="token punctuation">.</span>prototype <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token function-variable function">Basketball</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">intro</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>intro <span class="token operator">=</span> intro
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function-variable function">Football</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">intro</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>intro <span class="token operator">=</span> intro
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function-variable function">Tennis</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">intro</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>intro <span class="token operator">=</span> intro
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> sportsFactory <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">SportsFactory</span><span class="token punctuation">(</span><span class="token string">'Basketball'</span><span class="token punctuation">,</span> <span class="token string">'篮球流行于美国'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>sportsFactory<span class="token punctuation">.</span>intro<span class="token punctuation">)</span> <span class="token comment">// 篮球流行于美国</span>
+
+<span class="token keyword">const</span> sportsFactory1 <span class="token operator">=</span> <span class="token function">SportsFactory</span><span class="token punctuation">(</span><span class="token string">'Basketball'</span><span class="token punctuation">,</span> <span class="token string">'篮球流行于美国'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>sportsFactory1<span class="token punctuation">.</span>intro<span class="token punctuation">)</span> <span class="token comment">// 篮球流行于美国</span>
+</code></pre></div><div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>不是所有的函数都可以当做箭头函数
+Factory.prototype = {
+Basketball(intro) {
+this.intro = intro;
+}
+}
+new Basketball() // Basketball is not a constructor</p></div> <h2 id="抽象工厂模式"><a href="#抽象工厂模式" class="header-anchor">#</a> 抽象工厂模式</h2> <blockquote><p>通过对类的工厂抽象，使其业务用于对产品类簇的抽象，而不负责某一类产品的实例。</p></blockquote> <h3 id="抽象工厂方法"><a href="#抽象工厂方法" class="header-anchor">#</a> 抽象工厂方法</h3> <p>抽象类说白了就是类的类，定义一个抽象类其实就相当于ts中定义了一个接口，然后让子类继承抽象类相当于用这个接口去约束子类。</p> <p>比如化妆品可以按品牌分为很多类。</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token comment">// CHANEL</span>
+<span class="token keyword">function</span> <span class="token constant">CHANEL</span><span class="token punctuation">(</span>price<span class="token punctuation">,</span> capacity<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>price <span class="token operator">=</span> price
+  <span class="token keyword">this</span><span class="token punctuation">.</span>capacity <span class="token operator">=</span> capacity
+<span class="token punctuation">}</span>
+
+<span class="token comment">// Dior</span>
+<span class="token keyword">function</span> <span class="token function">Dior</span><span class="token punctuation">(</span>price<span class="token punctuation">,</span> capacity<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>price <span class="token operator">=</span> price
+  <span class="token keyword">this</span><span class="token punctuation">.</span>capacity <span class="token operator">=</span> capacity
+<span class="token punctuation">}</span>
+
+<span class="token comment">// and so on</span>
+</code></pre></div><p>如果希望给所有品牌定义一个总的Toilet类（抽象类），约束这些子类都有共同的type和两个方法。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">Toilet</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>type <span class="token operator">=</span> <span class="token string">'toilet'</span>
+<span class="token punctuation">}</span>
+
+<span class="token class-name">Toilet</span><span class="token punctuation">.</span>prototype <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token function">getPrice</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Error</span><span class="token punctuation">(</span><span class="token string">'抽象方法不能调用'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">getCapacity</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Error</span><span class="token punctuation">(</span><span class="token string">'抽象方法不能调用'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>抽象工厂方法就可以派上用场，它的作用就是使CHANEL、Dior这些子类去继承Toilet。</p> <p>首先定义抽象工厂方法以及抽象类Toilet。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * subType 需要继承父类的子类
+ * superType 父类的标识
+/
+function AbstructFactory(subType, superType){
+  // 判断抽象工厂中是否有该抽象类
+  if(typeof AbstructFactory[superType] === 'function') {
+    // 创建过渡类F
+    function F() {}
+
+    // 将父类的实例挂载到过渡类的原型上
+    F.prototype = new AbstructFactory[superType]()
+
+    // 将过渡类的实例挂载到子类的原型上
+    subType.prototype = new F()
+  } else {
+    return new new Error('抽象方法不能调用')
+  }
+}
+
+AbstructFactory.Toilet = function() {
+  this.type = 'toilet'
+}
+AbstructFactory.Toilet.getPrice = function() {
+  return new Error('抽象方法不能调用')
+}
+AbstructFactory.Toilet.getCapacity = function() {
+  return new Error('抽象方法不能调用')
+}
+
+// 普通CHANEL子类
+function CHANEL(price, capacity) {
+  this.price = price
+  this.capacity = capacity
+}
+
+AbstructFactory(CHANEL, 'Toilet')
+
+const chanel = new CHANEL(300, '50ML')
+console.log(chanel.__proto__.constructor) // F() {}
+</span></code></pre></div><div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>在最后一行console中发现一个问题，chanel实例原型对象的constructor指向的是过渡函数F，而不是其构造函数CHANEL。</p></div> <p>在抽象工厂方法中添加一行代码修正指向：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">AbstructFactory</span><span class="token punctuation">(</span><span class="token parameter">subType<span class="token punctuation">,</span> superType</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token comment">// 判断抽象工厂中是否有该抽象类</span>
+  <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token keyword">typeof</span> AbstructFactory<span class="token punctuation">[</span>superType<span class="token punctuation">]</span> <span class="token operator">===</span> <span class="token string">'function'</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 创建过渡类F</span>
+    <span class="token keyword">function</span> <span class="token constant">F</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+    <span class="token comment">// 将父类的实例挂载到过渡类的原型上</span>
+    <span class="token class-name">F</span><span class="token punctuation">.</span>prototype <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">AbstructFactory</span><span class="token punctuation">[</span>superType<span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token comment">// 修正子类原型对象constructor的指向</span>
+    <span class="token class-name">F</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>constructor <span class="token operator">=</span> subType
+
+    <span class="token comment">// 将过渡类的实例挂载到子类的原型上</span>
+    subType<span class="token punctuation">.</span>prototype <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">F</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">new</span> <span class="token function">Error</span><span class="token punctuation">(</span><span class="token string">'抽象方法不能调用'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 指向正确</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>chanel<span class="token punctuation">.</span><span class="token class-name">__proto__</span><span class="token punctuation">.</span>constructor<span class="token punctuation">)</span> <span class="token comment">// CHANEL(price, capacity) {this.price = price;this.capacity = capacity}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最后更新时间:</span> <span class="time">4/3/2022, 11:59:07 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/books/" class="prev router-link-active">
+        JavaScript设计模式
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.b0872638.js" defer></script><script src="/blog/assets/js/2.765c97b4.js" defer></script><script src="/blog/assets/js/17.1f371c9e.js" defer></script>
+  </body>
+</html>

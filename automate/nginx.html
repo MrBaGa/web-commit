@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Nginx部署 | Christine</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" herf="logo.png">
+    <meta name="description" content="一名专注前端开发的程序媛 👧🏻">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.9125a547.css" as="style"><link rel="preload" href="/blog/assets/js/app.b0872638.js" as="script"><link rel="preload" href="/blog/assets/js/2.765c97b4.js" as="script"><link rel="preload" href="/blog/assets/js/16.d0f7e542.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.2b7f9223.js"><link rel="prefetch" href="/blog/assets/js/11.75c62e44.js"><link rel="prefetch" href="/blog/assets/js/12.342c83b0.js"><link rel="prefetch" href="/blog/assets/js/13.36136e00.js"><link rel="prefetch" href="/blog/assets/js/14.ebcf16c3.js"><link rel="prefetch" href="/blog/assets/js/15.4324320d.js"><link rel="prefetch" href="/blog/assets/js/17.1f371c9e.js"><link rel="prefetch" href="/blog/assets/js/18.22f0ee3e.js"><link rel="prefetch" href="/blog/assets/js/19.d53a53b3.js"><link rel="prefetch" href="/blog/assets/js/20.f2926ac2.js"><link rel="prefetch" href="/blog/assets/js/21.086faee6.js"><link rel="prefetch" href="/blog/assets/js/22.ba95ea56.js"><link rel="prefetch" href="/blog/assets/js/23.9cec4f23.js"><link rel="prefetch" href="/blog/assets/js/24.4b4dafe9.js"><link rel="prefetch" href="/blog/assets/js/25.3ab1b5c8.js"><link rel="prefetch" href="/blog/assets/js/26.086d9ce4.js"><link rel="prefetch" href="/blog/assets/js/27.7d3bb54a.js"><link rel="prefetch" href="/blog/assets/js/28.439dca05.js"><link rel="prefetch" href="/blog/assets/js/29.7ecb82b3.js"><link rel="prefetch" href="/blog/assets/js/3.275c6e08.js"><link rel="prefetch" href="/blog/assets/js/30.4f4d8732.js"><link rel="prefetch" href="/blog/assets/js/31.d57dfb78.js"><link rel="prefetch" href="/blog/assets/js/32.8024799d.js"><link rel="prefetch" href="/blog/assets/js/33.0f47e14d.js"><link rel="prefetch" href="/blog/assets/js/34.4bb99a8c.js"><link rel="prefetch" href="/blog/assets/js/35.6aa7d475.js"><link rel="prefetch" href="/blog/assets/js/36.bad7051f.js"><link rel="prefetch" href="/blog/assets/js/37.367ef9ce.js"><link rel="prefetch" href="/blog/assets/js/38.48e6e97f.js"><link rel="prefetch" href="/blog/assets/js/39.358382f1.js"><link rel="prefetch" href="/blog/assets/js/4.f7478058.js"><link rel="prefetch" href="/blog/assets/js/40.b5fd9c0e.js"><link rel="prefetch" href="/blog/assets/js/5.771aaea5.js"><link rel="prefetch" href="/blog/assets/js/6.a5fb572d.js"><link rel="prefetch" href="/blog/assets/js/7.0f5a4226.js"><link rel="prefetch" href="/blog/assets/js/8.3552007e.js"><link rel="prefetch" href="/blog/assets/js/9.e8a8f62f.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.9125a547.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">Christine</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/interview/" class="nav-link">
+  前端面试之道
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端书籍" class="dropdown-title"><span class="title">前端书籍</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端书籍" class="mobile-dropdown-title"><span class="title">前端书籍</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/books/" class="nav-link">
+  JavaScript设计模式
+</a></li></ul></div></div><div class="nav-item"><a href="/blog/git/" class="nav-link">
+  Git
+</a></div><div class="nav-item"><a href="/blog/typescript/" class="nav-link">
+  TypeScript
+</a></div><div class="nav-item"><a href="/blog/react/" class="nav-link">
+  React
+</a></div><div class="nav-item"><a href="/blog/advance/prettier.html" class="nav-link">
+  前端进阶
+</a></div><div class="nav-item"><a href="/blog/automate/" class="nav-link router-link-active">
+  前端自动化部署
+</a></div><div class="nav-item"><a href="/blog/other/css.html" class="nav-link">
+  常见问题
+</a></div> <a href="https://github.com/Christine-Only/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/interview/" class="nav-link">
+  前端面试之道
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端书籍" class="dropdown-title"><span class="title">前端书籍</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端书籍" class="mobile-dropdown-title"><span class="title">前端书籍</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/books/" class="nav-link">
+  JavaScript设计模式
+</a></li></ul></div></div><div class="nav-item"><a href="/blog/git/" class="nav-link">
+  Git
+</a></div><div class="nav-item"><a href="/blog/typescript/" class="nav-link">
+  TypeScript
+</a></div><div class="nav-item"><a href="/blog/react/" class="nav-link">
+  React
+</a></div><div class="nav-item"><a href="/blog/advance/prettier.html" class="nav-link">
+  前端进阶
+</a></div><div class="nav-item"><a href="/blog/automate/" class="nav-link router-link-active">
+  前端自动化部署
+</a></div><div class="nav-item"><a href="/blog/other/css.html" class="nav-link">
+  常见问题
+</a></div> <a href="https://github.com/Christine-Only/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/blog/automate/" aria-current="page" class="sidebar-link">前端自动化部署</a></li><li><a href="/blog/automate/nginx.html" aria-current="page" class="active sidebar-link">Nginx部署</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/automate/nginx.html#nginx基础配置" class="sidebar-link">Nginx基础配置</a></li><li class="sidebar-sub-header"><a href="/blog/automate/nginx.html#nginx的ssl模块安装" class="sidebar-link">Nginx的SSL模块安装</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="nginx部署"><a href="#nginx部署" class="header-anchor">#</a> Nginx部署</h1> <h2 id="nginx基础配置"><a href="#nginx基础配置" class="header-anchor">#</a> Nginx基础配置</h2> <h3 id="安装编译工具及库文件"><a href="#安装编译工具及库文件" class="header-anchor">#</a> 安装编译工具及库文件</h3> <div class="language-shell extra-class"><pre class="language-shell"><code>yum -y <span class="token function">install</span> <span class="token function">make</span> zlib zlib-devel gcc-c++ libtool  openssl openssl-devel
+</code></pre></div><h3 id="首先要安装-pcre"><a href="#首先要安装-pcre" class="header-anchor">#</a> 首先要安装 PCRE</h3> <blockquote><p>PCRE 作用是让 Nginx 支持 Rewrite 功能。</p></blockquote> <h4 id="下载-pcre-安装包-下载地址-http-downloads-sourceforge-net-project-pcre-pcre-8-35-pcre-8-35-tar-gz"><a href="#下载-pcre-安装包-下载地址-http-downloads-sourceforge-net-project-pcre-pcre-8-35-pcre-8-35-tar-gz" class="header-anchor">#</a> 下载 PCRE 安装包，下载地址： http://downloads.sourceforge.net/project/pcre/pcre/8.35/pcre-8.35.tar.gz</h4> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token builtin class-name">cd</span> /usr/local/
+<span class="token function">wget</span> http://downloads.sourceforge.net/project/pcre/pcre/8.35/pcre-8.35.tar.gz
+</code></pre></div><h4 id="解压安装包"><a href="#解压安装包" class="header-anchor">#</a> 解压安装包:</h4> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">tar</span> zxvf pcre-8.35.tar.gz
+</code></pre></div><h4 id="进入安装包目录"><a href="#进入安装包目录" class="header-anchor">#</a> 进入安装包目录</h4> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token builtin class-name">cd</span> pcre-8.35
+</code></pre></div><h4 id="编译安装"><a href="#编译安装" class="header-anchor">#</a> 编译安装</h4> <div class="language-shell extra-class"><pre class="language-shell"><code>./configure
+<span class="token function">make</span> <span class="token operator">&amp;&amp;</span> <span class="token function">make</span> <span class="token function">install</span>
+</code></pre></div><h4 id="查看pcre版本"><a href="#查看pcre版本" class="header-anchor">#</a> 查看pcre版本</h4> <div class="language-shell extra-class"><pre class="language-shell"><code>pcre-config --version
+</code></pre></div><h3 id="连接远程服务器"><a href="#连接远程服务器" class="header-anchor">#</a> 连接远程服务器</h3> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token number">1</span>.  <span class="token function">ssh</span> 用户名@xx.xx.xx.xx 
+<span class="token number">2</span>.  输入密码 
+</code></pre></div><p>登陆成功进入服务器根目录</p> <h3 id="下载nginx及安装"><a href="#下载nginx及安装" class="header-anchor">#</a> 下载Nginx及安装</h3> <ul><li>去nginx download官网下载稳定版的nginx，上传到服务器的某个位置（这里的位置是 /usr/local ）解压。</li> <li>在服务器上用命令下载
+进入服务器<code>/usr/local</code>文件夹，打开命令行输入如下命令：</li></ul> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">wget</span> http://nginx.org/download/nginx-1.18.0.tar.gz
+</code></pre></div><p>查看当前目录就会看到 <strong>nginx-1.18.0.tar.gz</strong></p> <h3 id="编译"><a href="#编译" class="header-anchor">#</a> 编译</h3> <p>输入命令<code>tar -zxvf nginx-1.18.0.tar.gz</code>进行解压, 解压完成之后查看这个目录就会出现一个 <strong>nginx-1.18.0</strong> 文件夹, 进入<code>cd nginx-1.18.0</code>。</p> <blockquote><p>./configure的作用是检测系统配置，生成makefile文件，以便你可以用 make 和 make install 来编译和安装程序。</p></blockquote> <ol><li>执行<code>./configure --prefix=/usr/local/webserver/nginx --with-http_stub_status_module --with-http_ssl_module --with-pcre=/usr/local/src/pcre-8.35</code></li> <li><code>make</code> 编译 （make的过程是把各种语言写的源码文件，变成可执行文件和各种库文件）</li> <li><code>make install</code>安装 （<code>make install</code>是把这些编译出来的可执行文件和库文件复制到合适的地方）</li> <li>查看nginx版本</li></ol> <div class="language-shell extra-class"><pre class="language-shell"><code>/usr/local/nginx/sbin/nginx -v
+</code></pre></div><h3 id="nginx-配置"><a href="#nginx-配置" class="header-anchor">#</a> Nginx 配置</h3> <ul><li>http请求 listen端口以80开头</li> <li>检查配置文件nginx.conf的正确性命令：</li></ul> <div class="language-shell extra-class"><pre class="language-shell"><code>/usr/local/nginx/sbin/nginx -t
+</code></pre></div><h3 id="启动-nginx"><a href="#启动-nginx" class="header-anchor">#</a> 启动 Nginx</h3> <div class="language-shell extra-class"><pre class="language-shell"><code>/usr/local/nginx/sbin/nginx
+</code></pre></div><h3 id="重新加载-nginx"><a href="#重新加载-nginx" class="header-anchor">#</a> 重新加载 Nginx</h3> <div class="language-shell extra-class"><pre class="language-shell"><code>/usr/local/nginx/sbin/nginx -s reload
+</code></pre></div><h3 id="修改dist文件权限"><a href="#修改dist文件权限" class="header-anchor">#</a> 修改dist文件权限</h3> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">chmod</span> -R <span class="token number">777</span> dist
+</code></pre></div><h3 id="通过命令找到master对应的进程号"><a href="#通过命令找到master对应的进程号" class="header-anchor">#</a> 通过命令找到master对应的进程号</h3> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">ps</span> -ef<span class="token operator">|</span><span class="token function">grep</span> nginx
+</code></pre></div><h3 id="nginx-压缩"><a href="#nginx-压缩" class="header-anchor">#</a> nginx 压缩</h3> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment"># 开启gzip</span>
+<span class="token function">gzip</span> on<span class="token punctuation">;</span>
+
+<span class="token comment"># 启用gzip压缩的最小文件，小于设置值的文件将不会压缩</span>
+gzip_min_length 1k<span class="token punctuation">;</span>
+
+<span class="token comment"># gzip 压缩级别，1-9，数字越大压缩的越好，也越占用CPU时间，后面会有详细说明</span>
+gzip_comp_level <span class="token number">1</span><span class="token punctuation">;</span>
+
+<span class="token comment"># 进行压缩的文件类型。javascript有多种形式。其中的值可以在 mime.types 文件中找到。</span>
+gzip_types text/plain application/javascript application/x-javascript text/css application/xml text/javascript application/x-httpd-php image/jpeg image/gif image/png application/vnd.ms-fontobject font/ttf font/opentype font/x-woff image/svg+xml<span class="token punctuation">;</span>
+
+<span class="token comment"># 是否在http header中添加Vary: Accept-Encoding，建议开启</span>
+gzip_vary on<span class="token punctuation">;</span>
+
+<span class="token comment"># 禁用IE 6 gzip</span>
+gzip_disable <span class="token string">&quot;MSIE [1-6]\.&quot;</span><span class="token punctuation">;</span>
+
+<span class="token comment"># 设置压缩所需要的缓冲区大小     </span>
+gzip_buffers <span class="token number">32</span> 4k<span class="token punctuation">;</span>
+
+<span class="token comment"># 设置gzip压缩针对的HTTP协议版本，没做负载的可以不用</span>
+<span class="token comment"># gzip_http_version 1.0;</span>
+
+<span class="token comment"># 开启缓存</span>
+location ~* ^.+<span class="token punctuation">\</span>.<span class="token punctuation">(</span>ico<span class="token operator">|</span>gif<span class="token operator">|</span>jpg<span class="token operator">|</span>jpeg<span class="token operator">|</span>png<span class="token punctuation">)</span>$ <span class="token punctuation">{</span> 
+    access_log   off<span class="token punctuation">;</span> 
+    expires      2d<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+location ~* ^.+<span class="token punctuation">\</span>.<span class="token punctuation">(</span>css<span class="token operator">|</span>js<span class="token operator">|</span>txt<span class="token operator">|</span>xml<span class="token operator">|</span>swf<span class="token operator">|</span>wav<span class="token punctuation">)</span>$ <span class="token punctuation">{</span>
+    access_log   off<span class="token punctuation">;</span>
+    expires      24h<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+location ~* ^.+<span class="token punctuation">\</span>.<span class="token punctuation">(</span>html<span class="token operator">|</span>htm<span class="token punctuation">)</span>$ <span class="token punctuation">{</span>
+    expires      1h<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+location ~* ^.+<span class="token punctuation">\</span>.<span class="token punctuation">(</span>eot<span class="token operator">|</span>ttf<span class="token operator">|</span>otf<span class="token operator">|</span>woff<span class="token operator">|</span>svg<span class="token punctuation">)</span>$ <span class="token punctuation">{</span>
+    access_log   off<span class="token punctuation">;</span>
+    expires max<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="nginx的ssl模块安装"><a href="#nginx的ssl模块安装" class="header-anchor">#</a> Nginx的SSL模块安装</h2> <ol><li>查看 nginx 是否安装 http_ssl_module 模块。</li></ol> <div class="language-shell extra-class"><pre class="language-shell"><code>/usr/local/nginx/sbin/nginx -V
+</code></pre></div><p>如果出现 <code>configure arguments: –with-http_ssl_module</code>, 则已安装（下面的步骤可以跳过，进入 nginx.conf 配置）。</p> <ol start="2"><li>配置SSl模块</li></ol> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token builtin class-name">cd</span> nginx-xxx
+./configure --prefix<span class="token operator">=</span>/usr/local/nginx --with-http_ssl_module
+</code></pre></div><ol start="3"><li>使用 make 命令编译（使用make install会重新安装nginx，不建议使用make install），此时当前目录会出现 objs 文件夹。</li></ol> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">make</span>
+</code></pre></div><ol start="4"><li>关闭Nginx进程</li></ol> <div class="language-shell extra-class"><pre class="language-shell"><code>nginx -s stop
+</code></pre></div><ol start="5"><li>用新的 nginx 文件覆盖当前的 nginx 文件</li></ol> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">cp</span> ./objs/nginx /usr/local/nginx/sbin/
+</code></pre></div><ol start="6"><li>再次查看安装的模块（configure arguments: –with-http_ssl_module说明ssl模块已安装）。</li></ol> <div class="language-shell extra-class"><pre class="language-shell"><code>$ /usr/local/nginx/sbin/nginx -V
+
+nginx version: nginx/1.15.9
+<span class="token punctuation">..</span>.
+configure arguments: --with-http_ssl_module
+</code></pre></div><h3 id="sll证书部署"><a href="#sll证书部署" class="header-anchor">#</a> SLL证书部署</h3> <ol><li>下载申请好的 ssl 证书文件压缩包到本地并解压（这里是用的 pem 与 key 文件，文件名可以更改）</li> <li>在 nginx 目录新建 cert 文件夹存放证书文件。</li></ol> <div class="language-shell extra-class"><pre class="language-shell"><code>$ <span class="token builtin class-name">cd</span> /usr/local/nginx
+$ <span class="token function">mkdir</span> cert
+</code></pre></div><ol start="3"><li>将这两个文件上传至服务器的 cert 目录里。
+这里使用 mac 终端上传至服务器的 scp 命令（这里需要新开一个终端，不要使用连接服务器的窗口）:</li></ol> <div class="language-shell extra-class"><pre class="language-shell"><code>$ <span class="token function">scp</span> /Users/yourname/Downloads/ssl.pem root@xxx.xx.xxx.xx:/usr/local/nginx/cert/
+$ <span class="token function">scp</span> /Users/yourname/Downloads/ssl.key root@xxx.xx.xxx.xx:/usr/local/nginx/cert/
+</code></pre></div><div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>scp [本地文件路径，可以直接拖文件至终端里面] [&lt;服务器登录名&gt;@&lt;服务器IP地址&gt;:&lt;服务器上的路径&gt;]</p></div> <h3 id="nginx-conf-配置"><a href="#nginx-conf-配置" class="header-anchor">#</a> nginx.conf 配置</h3> <ol><li>编辑 <code>/usr/local/nginx/conf/nginx.conf</code> 配置文件</li> <li>配置 https server。注释掉之前的 http server 配置，新增 https server:</li></ol> <div class="language-shell extra-class"><pre class="language-shell"><code>server <span class="token punctuation">{</span>
+    <span class="token comment"># 服务器端口使用443，开启ssl, 这里ssl就是上面安装的ssl模块</span>
+    listen       <span class="token number">443</span> ssl<span class="token punctuation">;</span>
+    <span class="token comment"># 域名，多个以空格分开</span>
+    server_name  hack520.com www.hack520.com<span class="token punctuation">;</span>
+    
+    <span class="token comment"># ssl证书地址</span>
+    ssl_certificate     /usr/local/nginx/cert/ssl.pem<span class="token punctuation">;</span>  <span class="token comment"># pem文件的路径</span>
+    ssl_certificate_key  /usr/local/nginx/cert/ssl.key<span class="token punctuation">;</span> <span class="token comment"># key文件的路径</span>
+    
+    <span class="token comment"># ssl验证相关配置</span>
+    ssl_session_timeout  5m<span class="token punctuation">;</span>    <span class="token comment">#缓存有效期</span>
+    ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:ECDHE:ECDH:AES:HIGH:<span class="token operator">!</span>NULL:<span class="token operator">!</span>aNULL:<span class="token operator">!</span>MD5:<span class="token operator">!</span>ADH:<span class="token operator">!</span>RC4<span class="token punctuation">;</span>    <span class="token comment">#加密算法</span>
+    ssl_protocols TLSv1 TLSv1.1 TLSv1.2<span class="token punctuation">;</span>    <span class="token comment">#安全链接可选的加密协议</span>
+    ssl_prefer_server_ciphers on<span class="token punctuation">;</span>   <span class="token comment">#使用服务器端的首选算法</span>
+
+    location / <span class="token punctuation">{</span>
+        root   html<span class="token punctuation">;</span>
+        index  index.html index.htm<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token number">3</span>. 将 http 重定向 https。
+
+server <span class="token punctuation">{</span>
+    listen       <span class="token number">80</span><span class="token punctuation">;</span>
+    server_name  hack520.com www.hack520.com<span class="token punctuation">;</span>
+    <span class="token builtin class-name">return</span> <span class="token number">301</span> https://<span class="token variable">$server_name</span><span class="token variable">$request_uri</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="重启-nginx"><a href="#重启-nginx" class="header-anchor">#</a> 重启 nginx</h3> <div class="language-shell extra-class"><pre class="language-shell"><code>$ /usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf
+</code></pre></div><ol><li>如果 80 端口被占用，用<code>kill [id]</code>来结束进程：</li></ol> <h3 id="查看端口使用"><a href="#查看端口使用" class="header-anchor">#</a> 查看端口使用</h3> <div class="language-shell extra-class"><pre class="language-shell"><code>$ <span class="token function">netstat</span> -lntp
+
+
+Active Internet connections <span class="token punctuation">(</span>only servers<span class="token punctuation">)</span>
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        <span class="token number">0</span>      <span class="token number">0</span> <span class="token number">0.0</span>.0.0:80              <span class="token number">0.0</span>.0.0:*               LISTEN      <span class="token number">21307</span>/nginx: master 
+tcp        <span class="token number">0</span>      <span class="token number">0</span> <span class="token number">0.0</span>.0.0:22              <span class="token number">0.0</span>.0.0:*               LISTEN      <span class="token number">3072</span>/sshd           
+tcp        <span class="token number">0</span>      <span class="token number">0</span> <span class="token number">0.0</span>.0.0:443             <span class="token number">0.0</span>.0.0:*               LISTEN      <span class="token number">21307</span>/nginx: master 
+
+<span class="token comment"># 结束 80 端口进程</span>
+$ <span class="token function">kill</span> <span class="token number">21307</span>
+</code></pre></div><ol start="2"><li>再次重启 nginx：</li></ol> <div class="language-shell extra-class"><pre class="language-shell"><code>$ /usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最后更新时间:</span> <span class="time">1/17/2022, 3:26:18 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/automate/" class="prev router-link-active">
+        前端自动化部署
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.b0872638.js" defer></script><script src="/blog/assets/js/2.765c97b4.js" defer></script><script src="/blog/assets/js/16.d0f7e542.js" defer></script>
+  </body>
+</html>
